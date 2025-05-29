@@ -68,17 +68,20 @@ jobs:
           branch: www #部署提交到的分支
           folder: dist # 打包好的目录
 
-  # 工作流中又包含了一个 console-test 任务，依赖 build 任务
-  console-test:
-    runs-on: ubuntu-latest
-    needs: [build] # 任务依赖关系
+      - name: 输出nginx测试
+        run: ls /etc/nginx
 
-    steps:
-      - name: 输出上下文
-        run: |
-          pwd
-          echo ${{ needs.build.outputs.test }}
-          exit
+  # 工作流中又包含了一个 console-test 任务，依赖 build 任务
+  #console-test:
+  #  runs-on: ubuntu-latest
+  #  needs: [build] # 任务依赖关系
+
+  #  steps:
+  #    - name: 输出上下文
+  #      run: |
+  #        pwd
+  #        echo ${{ needs.build.outputs.test }}
+  #        exit
         
         
   
