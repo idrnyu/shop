@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+}
+
+.content {
+  @apply mx-auto lg:w-9/12 w-11/12 max-w-7xl;
+}
