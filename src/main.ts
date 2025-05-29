@@ -7,4 +7,4 @@ import VConsole from 'vconsole';
 
 const vConsole = new VConsole({ theme: 'dark' });
 
-createApp(App).use(router).mount("#shopp");
+createApp(App).use(router).mount("#shop");

@@ -55,7 +55,7 @@ const router = createRouter({
   linkExactActiveClass: 'link-exact-active',
   scrollBehavior: (to, form) => {
     if (to.path !== form.path) {
-      const mainBoxDom = document.querySelector('#shopp');
+      const mainBoxDom = document.querySelector('#shop');
       if (mainBoxDom) {
         mainBoxDom.scrollTop = 0;
       }

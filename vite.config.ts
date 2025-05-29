@@ -17,6 +17,6 @@ export default defineConfig(({ command, mode, ssrBuild }) => {
         "@": resolve(__dirname, "src")
       }
     },
-    base: env.VITE_APP_ENV === 'github' ? 'shopp-web' : '/',
+    base: env.VITE_APP_ENV === 'github' ? 'shop' : '/',
   }
 });
