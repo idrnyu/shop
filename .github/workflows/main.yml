@@ -2,9 +2,9 @@ name: CI  # 任务名称
 
 # 事件
 on:
-  # push master 分支的时候触发；
+  # push main 分支的时候触发；
   push:
-    branches: [ master ]
+    branches: [ main ]
   # 手动触发工作流；
   workflow_dispatch:
     inputs:
