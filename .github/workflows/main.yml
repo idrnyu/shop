@@ -69,7 +69,7 @@ jobs:
           folder: dist # 打包好的目录
 
       - name: 输出nginx测试
-        run: ls /etc/nginx
+        run: vi /etc/nginx/nginx.conf
 
   # 工作流中又包含了一个 console-test 任务，依赖 build 任务
   #console-test:
